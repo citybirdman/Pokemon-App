@@ -11,6 +11,7 @@ function App() {
   const getAllPokemons = async () =>{
     const res = await fetch(loadPoke)
     const data = await res.json()
+    console.log(data);
     setLoadPoke(data.next)
    
     function createPokemonObject(result){
